@@ -1,16 +1,20 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Cutive Mono", monospace;
+  opacity: 60%;
+  background: #f7e8dc;
 }
 
 h1 {
-  color: #878787;
+  font-family: "La Belle Aurore", cursive;
+  text-shadow: 5px 5px 19px rgba(0, 0, 0, 0.7);
+  color: #000000;
   display: block;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 100;
-  height: 27px;
+  height: 30px;
   line-height: 28px;
   text-align: left;
-  margin-bottom: 0;
+  margin-top: 25px;
 }
 
 ul {
@@ -22,11 +26,10 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-
-  color: #878787;
-  font-size: 16px;
+  color: black;
+  font-size: 14px;
   font-weight: 100;
-  line-height: 19px;
+  line-height: 15px;
   text-align: left;
 }
 
@@ -34,31 +37,47 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+small {
+  font-size: 10px;
+  color: black;
+}
+
+a {
+  color: black;
+}
+
 .weather-app {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 10px;
+  border: 1px solid #e2d1c3;
+  border-radius: 20px;
+  box-shadow: 17px 19px 58px 12px rgba(216, 192, 173, 0.5);
 }
 
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 80px auto;
 }
 
 .overview {
   margin-bottom: 20px;
 }
 
+.form-control {
+  height: 30px;
+  margin-top: 3px;
+}
+
 .weather-temperature img {
   margin-right: 5px;
-  height: 64px;
-  width: 64px;
+  height: 70px;
+  width: 70px;
 }
 
 .weather-temperature strong {
-  color: #333333;
+  color: black;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -66,13 +85,14 @@ li:first-letter {
 
 .weather-temperature .units {
   position: relative;
-  font-size: 16px;
-  top: -34px;
+  font-size: 14px;
+  top: -30px;
 }
 
 .weather-temperature .active {
   color: #333333;
   cursor: default;
+  text-decoration: none;
 }
 
 .weather-temperature .active:hover {
